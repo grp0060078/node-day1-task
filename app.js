@@ -49,6 +49,6 @@ app.get('/notes', (request, response) => {
     response.end(JSON.stringify(notes));
 });
 
-app.listen(port, hostname, () => {
+app.listen(port, () => {
     console.log(`server running at http://${hostname}:${port}`);
 });
